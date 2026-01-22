@@ -16,7 +16,7 @@ dependencies:
   url_launcher: ^6.2.6
   firebase_core: ^2.27.0
   cloud_firestore: ^4.15.0
-  video_player: ^2.8.6
+  video_player: ^2.8.5
 
 
 dev_dependencies:
