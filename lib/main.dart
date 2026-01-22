@@ -3,13 +3,12 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'firebase_options.dart';
 import 'pages/food_list_page.dart';
+import 'package:flutter/foundation.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  bool isCI = const bool.fromEnvironment('CI');
-
-  if (!isCI) {
+  if (!kIsWeb) {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
